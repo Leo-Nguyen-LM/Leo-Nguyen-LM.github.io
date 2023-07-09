@@ -1,0 +1,397 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #2e313a;
+  margin-top: 0px;
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  letter-spacing: 0.003em;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+figure:before,
+figure:after {
+  position: absolute;
+}
+figure:before {
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  margin-top: -36px;
+  margin-left: -36px;
+  content: url(../images/gif.png);
+}
+figure.play:before {
+  display: none;
+}
+
+.gif
+{
+    background-image: url(../images/gif.png);
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    background-position: 0 0;
+    height: 72px;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    width: 72px
+}
+
+@font-face
+{
+  font-family: alternate-gothic-no-2-d;
+  src: url('../fonts/AlternateGothicNo2DRegular.ttf'),
+  url('../fonts/AlternateGothicNo2DRegular.ttf');
+}
+
+@font-face
+{
+  font-family: adobe-garamond-pro-italic;
+  src: url('../fonts/AdobeGaramondProItalic.ttf'),
+  url('../fonts/AdobeGaramondProItalic.ttf');
+}
+
+@font-face
+{
+  font-family: adobe-garamond;
+  src: url('../fonts/AdobeGaramond.ttf'),
+  url('../fonts/AdobeGaramond.ttf');
+}
+
+#wrap
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 50px; 
+  height: auto; 
+  width: auto;
+}
+
+.header
+{
+  width: 100%;
+  margin: auto;
+}
+
+.slide
+{
+  width: 80%;
+  max-width: 1800px;
+  min-height: 75%;
+  color: #000;
+  position: absolute;
+  top: 14%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+  overflow: visible;
+}
+
+.label
+{
+  border-radius: 4px;
+  font-family: Helvetica;
+  font-size: 0.9em;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  line-height: normal;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: inline-block;
+  margin-bottom: 0.3em;
+  margin-right: 0.3em;
+}
+
+.education
+{
+  background-color: #492E34;
+  content: "Education";
+}
+
+.resume
+{
+  background-color: #7C334B;
+  content: "resume";
+}
+
+.projects
+{
+  background-color: #A63661;
+  content: 'projects';
+}
+
+.accomplishments
+{
+  background-color: #C83456;
+  content: "accomplishments";
+}
+
+
+
+.screenshot
+{
+  width: 65%;
+  min-width: 2px;
+  position:relative;
+  display: block;
+  float: left;
+  clear: left;
+  height: 0;
+  padding-top: calc(0.65 * 56.25%);
+  overflow: hidden;
+  background-size: 100%;
+  box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+ul
+{
+  padding: 2;
+  font-weight: bold;
+}
+
+li { margin-left: -1em }
+
+
+.threetwo
+{
+  padding-top: calc(0.66 * 66.66%);
+}
+
+.fourthree
+{
+  padding-top: calc(0.66 * 75%);
+}
+
+.square
+{
+  width: 39%;
+  padding-top: calc(0.39 * 100%);
+}
+
+.Leo { background-image: url("../images/photo.jpg"); } 
+
+
+.screenshot iframe, .screenshot object, .screenshot embed
+{
+  position:absolute;
+  top:0;
+  left:0;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+}
+
+.description
+{
+  width: 26%;
+  float: left;
+  margin-left: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.description-me
+{
+  width: 55%;
+  height: 100%;
+  float: left;
+  margin-left: 20px;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1280px)
+{
+  .description, .description-me
+  {
+      font-size: 0.9em;
+  }
+}
+
+
+.bold
+{
+  font-weight: bold;
+}
+
+.title-project
+{
+  font-family: alternate-gothic-no-2-d;
+  font-size: 2.4rem;
+  font-weight: normal;
+  font-style: normal;
+  color: #2e313a;
+  margin-top: 0px;
+  margin-bottom: -1rem;
+  padding-bottom: -1rem;
+}
+
+.intro
+{
+  max-width: 640px;
+  min-height: 240px;
+  text-align: left;
+  margin: auto;
+  margin-top: -50px;
+}
+
+.verticalalign
+{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#title
+{
+  font-family: alternate-gothic-no-2-d;
+  font-size: 55pt;
+  font-weight: normal;
+  width: 100%;
+  font-style: normal;
+  color: #2e313a;
+  margin-top: 5%;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
+  margin-bottom: 0px;
+}
+
+#sub-title
+{
+  font-family: adobe-garamond-pro-italic;
+  font-size: 13pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #2e313a;
+  margin-bottom: 0px;
+  margin-top: -0.5em;
+  text-align: right;
+  margin-right: 15px;
+  letter-spacing: 0.003em;
+}
+
+#intro-text
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: normal;
+  color: #2e313a;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  line-height: 2em;
+  font-size: 1.2em;
+  text-align: left;
+  letter-spacing: 0.003em;
+}
+
+#intro-text a:link, #intro-text a:visited, #intro-text a
+{
+  color: #000;
+  text-decoration: none;
+}
+
+.icon
+{
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  display: inline-block;
+}
+
+#linkedin { background-image: url('../images/icon_in.png'); }
+#email { background-image: url('../images/icon_email.png'); }
+#github { background-image: url('../images/icon_gh.jpg')}
+
+#contact
+{
+  display: inline-block;
+  text-align: center;
+  width: 96px*3;
+}
+
+#contact a:link, #contact a:visited, #contact a
+{
+  color: #000;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#contact a:hover, #contact a:active
+{
+  cursor: pointer;
+  color: #000;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.space
+{
+  margin-right: 0.5em;
+}
+
+a:link,a:visited,a
+{
+  /*color: #f03;*/
+  color: #000;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,a:active
+{
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer;
+  color: #000;
+}
+
+
+.project-snippits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-snippit   {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 170px;
+}
+
+.thumbnail img {
+  object-fit: cover;
+  height: 94%;
+  width: 100%;
+}
